@@ -8,20 +8,20 @@ main(){
     int vetor[14];
     int i, X, Y, soma, aux;
 // para preencher o vetor
-    printf("Preencha o valores para cada posição abaixo\n");
+    printf("Preencha o valores para cada posiÃ§Ã£o abaixo\n");
     for( i = 0; i < 15; i++){
-        printf("vetor[%i]: ", i);
-        scanf("%i", &vetor[i]);
+        printf("vetor[%d]: ", i);
+        scanf("%d", &vetor[i]);
     }
-// para informar e validar as posições
+// para informar e validar as posiÃ§Ãµes
     do {
-        printf("Informe a posição X: ");
-        scanf("%i", &X);
-        printf("Informe a posição Y: ");
-        scanf("%i", &Y);
+        printf("Informe a posiÃ§Ã£o X: ");
+        scanf("%d", &X);
+        printf("Informe a posiÃ§Ã£o Y: ");
+        scanf("%d", &Y);
 
         if((X < 0 || X >= 15)||(Y < 0 || Y >= 15)) {
-        printf("Posições Invalidas!\n");
+        printf("PosiÃ§Ãµes Invalidas!\n");
         aux = 1;
         }else {
         aux = 0;
@@ -30,8 +30,8 @@ main(){
 
     soma = vetor[X] + vetor[Y];
 
-    printf("O valor contido na posição X é %i.\n", vetor[X]);
-    printf("O valor contido na posição Y é %i.\n", vetor[Y]);
-    printf("A soma dos valores contidos nas posições X e Y do vetor é %i", soma);
+    printf("O valor contido na posiÃ§Ã£o X Ã© %i.\n", vetor[X]);
+    printf("O valor contido na posiÃ§Ã£o Y Ã© %i.\n", vetor[Y]);
+    printf("A soma dos valores contidos nas posiÃ§Ãµes X e Y do vetor Ã© %d", soma);
 
 }
